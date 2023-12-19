@@ -1,47 +1,18 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import AiList from './components/AiList.vue';
+import AiMenu from './components/AiMenu.vue';
+import AiSearch from './components/AiSearch.vue';
+
+import 'semantic-ui-css/semantic.min.css';
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did itooooovvvv!" />helpesds
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+<AiMenu/>
+<AiSearch/>
+<AiList/>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
 </style>
