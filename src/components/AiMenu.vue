@@ -28,7 +28,7 @@
                 <a class="item" href="index.html">
                     Dashboard v1
                 </a>
-                </div>
+                </div>  
                    
              </div>
    </div>
