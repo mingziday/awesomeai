@@ -13,7 +13,7 @@
                     <i class="ion-speedometer titleIcon icon"></i> Dashboard <i class="dropdown icon"></i>
                 </a>
                 <div class="content active">
-                <a class="item" href="index.html">
+                <a class="item transition visible" href="index.html">
                     Dashboard v1
                 </a>
                 </div>
@@ -25,7 +25,7 @@
                 </div>
 
                 <div class="content active">
-                <a class="item" href="index.html">
+                <a class="item transition visible" href="index.html">
                     Dashboard v1
                 </a>
                 </div>  

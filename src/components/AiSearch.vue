@@ -9,9 +9,6 @@
         <a class="item labeled openbtn">
             <i class="ion-navicon-round big icon"></i>
         </a>
-        <a class="item labeled expandit" onclick="toggleFullScreen(document.body)">
-            <i class="ion-arrow-expand big icon"></i>
-        </a>
         <div class="item ui colhidden">
             <div class="ui icon input">
                 <input type="text" placeholder="Search...">

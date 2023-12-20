@@ -1,11 +1,11 @@
-export const origMusics = [
+export const origAis = [
     {
       id: 1,
       title: '入殓师03',
       description: 'On-demand sand castle construction expertise.',
       url: 'music/03-joe_hisaishi-kaisan-cocmp3.mp3',
       votes: 1,
-      imageUrl: 'images/products/001.jpg',
+      imageUrl: 'src/assets/gallery/images1.jpg',
       ciUrl: 'images/avatars/molly.png',
       quUrl: 'images/avatars/daniel.jpg',
       ci:'久石让',
@@ -19,7 +19,7 @@ export const origMusics = [
       votes: 2,
       ciUrl: 'images/avatars/kristy.png',
       quUrl: 'images/avatars/daniel.jpg',
-      imageUrl: 'images/products/003.png',
+      imageUrl: 'assets/gallery/images2.jpg',
       ci:'久石让',
       qu:'久石让'
     },
@@ -31,7 +31,7 @@ export const origMusics = [
       votes: 4,
       ciUrl: 'images/avatars/daniel.jpg',
       quUrl: 'images/avatars/jenny.jpg',
-      imageUrl: 'images/products/002.jpg',
+      imageUrl: './assets/gallery/images3.jpg',
       ci:'久石让',
       qu:'久石让'
     },
@@ -43,7 +43,7 @@ export const origMusics = [
       votes: 3,
       ciUrl: 'images/avatars/daniel.jpg',
       quUrl: 'images/avatars/elyse.png',
-      imageUrl: 'images/products/005.png',
+      imageUrl: '../assets/gallery/images4.jpg',
       ci:'久石让',
       qu:'久石让'
     },
