@@ -5,21 +5,22 @@
         <img :src=aiInfo.imageUrl class="transition visible">
     </div>
     <div class="content">
-        <div class="header">{{aiInfo.title}}</div>
-        <div class="meta">
-            <a>Dressmaker</a>
+        <div class="header">{{aiInfo.name}}</div>
+        <div class=" meta">
+            <i class="user icon"></i>
+            <a>{{aiInfo.auther}}</a>
         </div>
         <div class="description">
-            Amalia is an Dressmaker living in Baku.
+            {{aiInfo.description}}
         </div>
     </div>
     <div class="extra content">
         <span class="right floated">
-            Joined in 2010
+            {{aiInfo.date}}
         </span>
         <span>
-            <i class="user icon"></i>
-            23 Friends
+            <i class="heart red icon"></i>
+            {{aiInfo.likes}}  Likes
         </span>
     </div>
 </div>
