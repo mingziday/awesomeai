@@ -10,23 +10,28 @@
             <div class="ui accordion inverted">
 
                 <a class="title item active">
-                    <i class="ion-speedometer titleIcon icon"></i> Dashboard <i class="dropdown icon"></i>
+                    <i class="ion-speedometer titleIcon icon"></i> Ai分类 <i class="dropdown icon"></i>
                 </a>
                 <div class="content active">
                 <a class="item transition visible" href="index.html">
-                    Dashboard v1
+                    生活
+                </a>
+                </div>
+                <div class="content active">
+                <a class="item transition visible" href="index.html">
+                    工作
                 </a>
                 </div>
 
                 <div class="title item active">
                     <i class="ion-ios-lightbulb titleIcon icon"></i>
 
-                    <i class="dropdown icon"></i> Apps
+                    <i class="dropdown icon"></i> Ai咨询
                 </div>
 
                 <div class="content active">
                 <a class="item transition visible" href="index.html">
-                    Dashboard v1
+                    测试
                 </a>
                 </div>  
                    
