@@ -19,7 +19,7 @@
             {{aiInfo.date}}
         </span>
         <span>
-            <i class="heart red icon"></i>
+            <i class="heart red icon" @click="onLike(aiInfo.id)"></i>
             {{aiInfo.likes}}  Likes
         </span>
     </div>
@@ -31,10 +31,17 @@
 
 </style>
 <script>
+import { useAiStore } from '@/store/ai.js'
 export default {
     props: ['aiInfo'],
     setup() {
-        
+        function onLike(id) {
+            const store = useAiStore();
+            store.like(id);
+        }
+        return {
+            onLike
+        }
     },
 
 }

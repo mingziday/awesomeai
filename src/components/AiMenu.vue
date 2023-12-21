@@ -13,12 +13,17 @@
                     <i class="ion-speedometer titleIcon icon"></i> Ai分类 <i class="dropdown icon"></i>
                 </a>
                 <div class="content active">
-                <a class="item transition visible" href="index.html">
+                <a class="item transition visible" @click="getAiByCategory()">
+                    全部
+                </a>
+                </div>
+                <div class="content active">
+                <a class="item transition visible" @click="getAiByCategory('fun')">
                     生活
                 </a>
                 </div>
                 <div class="content active">
-                <a class="item transition visible" href="index.html">
+                <a class="item transition visible" @click="getAiByCategory('work')">
                     工作
                 </a>
                 </div>
@@ -43,16 +48,15 @@
 
 </style>
 <script>
+import { useAiStore} from '@/store/ai.js'
 export default {
-  name: "AiMenu",
-  data(){
-    return {
-      titel:'',
+  setup(){
+    function getAiByCategory(cate){
+      const sore = useAiStore();
+      sore.category(cate);
     }
-  },
-  methods:{
-    search(){
-      
+    return {
+      getAiByCategory
     }
   }
 }

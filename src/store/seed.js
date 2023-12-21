@@ -31,13 +31,13 @@ export const origAis = [
     },
     {
       id: 4,
-      name: '彩票',
+      name: '写文',
       description: '这是一个进行彩票预测的Ai.',
       auther: '张三',
       likes: 1,
       imageUrl: 'static/gallery/images4.jpg',
       date: '2012-03-04',
-      category: 'work',
+      category: 'fun',
     },
     {
       id: 5,
@@ -47,6 +47,6 @@ export const origAis = [
       likes: 1,
       imageUrl: 'static/gallery/images5.jpg',
       date: '2012-03-04',
-      category: 'work',
+      category: 'fun',
     },
   ];

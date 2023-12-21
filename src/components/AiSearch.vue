@@ -10,9 +10,9 @@
             <i class="ion-navicon-round big icon"></i>
         </a>
         <div class="item ui colhidden">
-            <div class="ui icon input">
-                <input type="text" placeholder="Search...">
-                <i class="search icon"></i>
+            <div class="ui action input">
+                <input type="text" placeholder="Search..." v-model="title">
+                <button class="ui button" @click="search">Search</button>
             </div>
         </div>
         
@@ -21,16 +21,17 @@
  </div>
 </template>
 <script>
+import { useAiStore} from '@/store/ai.js'
+import { ref } from  'vue'
 export default {
-  name: "AiSearch",
-  data(){
-    return {
-      titel:'',
+  setup(){
+    const title = ref('');
+    function search(){
+      const sore = useAiStore();
+      sore.search(title.value);
     }
-  },
-  methods:{
-    search(){
-
+    return {
+      title,search
     }
   }
 }

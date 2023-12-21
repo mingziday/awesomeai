@@ -25,18 +25,13 @@
 
 
 <script set up >
-import { ref,reactive } from 'vue'
-import {origAis} from './seed.js'
-import Ai from './Ai.vue';
+import { useAiStore } from '@/store/ai.js'
+import Ai from './Ai.vue'
+import { storeToRefs } from 'pinia'
 export default {
-    props: ['aiInfo'],
     setup() {
-        const aiList = reactive(origAis);
-        function increment() {
-            // 在 JavaScript 中需要 .value
-            // count.value++
-        }
-        // 不要忘记同时暴露 increment 函数
+        const {aiList} = storeToRefs(useAiStore());
+        console.log(aiList);
         return {
             aiList,
         };
