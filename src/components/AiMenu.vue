@@ -9,9 +9,9 @@
             </a>
             <div class="ui accordion inverted">
 
-                <a class="title item active">
+                <router-link class="title item active" to="/ai">
                     <i class="ion-speedometer titleIcon icon"></i> Ai分类 <i class="dropdown icon"></i>
-                </a>
+                </router-link>
                 <div class="content active">
                 <a class="item transition visible" @click="getAiByCategory()">
                     全部
@@ -28,11 +28,11 @@
                 </a>
                 </div>
 
-                <div class="title item active">
+                <router-link class="title item active"  to="/tool">
                     <i class="ion-ios-lightbulb titleIcon icon"></i>
 
-                    <i class="dropdown icon"></i> Ai咨询
-                </div>
+                    <i class="dropdown icon"></i> 小工具
+                </router-link>
 
                 <div class="content active">
                 <a class="item transition visible" href="index.html">
